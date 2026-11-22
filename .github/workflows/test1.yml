@@ -8,7 +8,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   moje_pierwsze_zadanie:
-    runs-on: ubuntu-latest
+    runs-on: debian13_runner1
 
     steps:
       - name: Sprawdzamy wersję Python
