@@ -8,7 +8,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   moje_pierwsze_zadanie:
-    runs-on: debian13_runner1
+    runs-on: ubuntu-latest
 
     steps:
       - name: Sprawdzamy wersję Python
@@ -25,11 +25,3 @@ jobs:
 
       - name: Wyświetl listę plików po checkout
         run: ls -a
-        
-      - name: Setup Python
-        uses: actions/setup-python@v7.1.0
-        with:
-          python-version: '3.16.0-alpha.2'
-
-      - name: Sprawdzamy wersję Python po instalacji
-        run: python -V
