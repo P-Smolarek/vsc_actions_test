@@ -11,18 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Sprawdzamy wersję Python
+        run: python -V
+
+      - name: Wyświetl aktualny katalog roboczy
+        run: pwd
+
+      - name: Wyświetl listę plików
+        run: ls -a
+
+      # Checks-out your repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Pauza
-        run: |
-          echo "czekamy 10s"
-          sleep 10
-          echo "Idziemy dalej"
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Wyświetl listę plików po checkout
+        run: ls -
