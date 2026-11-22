@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Sprawdzamy wersję Python
-        run: python -V
+        run: python3 -V
 
       - name: Wyświetl aktualny katalog roboczy
         run: pwd
